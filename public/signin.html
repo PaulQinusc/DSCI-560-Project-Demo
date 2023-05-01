@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Sign In</h1>
+    </header>
+    <main>
+        <section>
+            <form id="signinForm" onsubmit="signIn(event)">
+                <label for="username">Username:</label>
+                <input type="username" id="username" placeholder="Enter your username">
+                <label for="password">Password:</label>
+                <input type="password" id="password" placeholder="Enter your password">
+                <button type="submit">Sign In</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-right">
+            <a href="signup.html">Sign Up</a>
+        </div>
+    </footer>
+    <script src="/app.js"></script>
+</body>
+</html>

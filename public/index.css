@@ -1,0 +1,116 @@
+.resultItem {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    max-width: 850px;
+    width: fit-content;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+}
+
+.resultItem:hover {
+    box-shadow: 4px 4px 30px 0 rgba(1, 23, 53, .1);
+    transition: all .3s;
+}
+
+.form {
+    position: relative;
+}
+
+.disFilterWrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.disFilterWrapper select {
+    width: 160px;
+}
+
+.btn {
+    position: absolute;
+    left: 500px;
+    top: 28px;
+    width: 80px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.input {
+    height: 30px;
+    width: 500px;
+}
+
+.input:disabled {
+    background: #ccc;
+    cursor: not-allowed;
+}
+
+.tableTitle {
+    background: #ccc;
+}
+
+.tableTitle:hover {
+    box-shadow: none;
+    transform: none;
+    transition: none;
+}
+
+.tableItem {
+    width: 150px;
+}
+
+.tableItem:first-child {
+    width: 350px;
+}
+
+.tableItem:nth-child(2) {
+    width: 200px;
+}
+
+.loading {
+    margin-left: 10px;
+}
+
+.loading::after {
+    content: '';
+    position: absolute;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    width: 10px;
+    height: 10px;
+    border-left: 2px solid transparent;
+    border-bottom: 2px solid transparent;
+    animation: loading1 1s ease infinite;
+    z-index: 10;
+    left: 5px;
+}
+
+.loading::before {
+    content: '';
+    position: absolute;
+    border-radius: 50%;
+    border: 2px dashed #fff;
+    width: 10px;
+    height: 10px;
+    border-left: 2px solid transparent;
+    border-bottom: 2px solid transparent;
+    animation: loading1 2s linear infinite;
+    z-index: 5;
+    left: 5px;
+}
+
+@keyframes loading1 {
+    0% {
+        transform: rotate(0deg)
+    }
+
+    100% {
+        transform: rotate(360deg)
+    }
+}

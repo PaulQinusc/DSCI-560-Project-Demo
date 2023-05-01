@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Page</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="payment.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Payment</h1>
+    </header>
+    <main>
+        <section>
+            <h3 id="noParkingRecord" style="display: none;">No parking record</h3>
+            <table id="paymentTable">
+                <thead>
+                    <tr>
+                        <th>Plate Number:</th>
+                        <th>Time:</th>
+                        <th>Amount needed to pay:</th>
+                    </tr>
+                </thead>
+                <tbody id="paymentTableBody">
+                    <!-- 在此处插入后端提供的停车记录数据 -->
+                </tbody>
+            </table>
+            <form id="paymentForm">
+                <label for="creditCard">Card Number:</label>
+                <input type="text" id="creditCard" placeholder="Enter your card number">
+                <label for="expirationDate">Expiry Date:</label>
+                <input type="text" id="expirationDate" placeholder="MM/YY">
+                <label for="cvv">CVV:</label>
+                <input type="text" id="cvv" placeholder="Enter your CVV">
+                <button type="submit" onclick="confirmPayment(event)">Confirm Payment</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-left">
+            <a href="index.html">Home</a>
+            <a href="profile.html">Profile</a>
+        </div>
+        <div class="footer-right">
+            <a href="#" onclick="logout()">Log Out</a>
+        </div>
+    </footer>
+    <div id="paymentSuccessModal" style="display: none;">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p>Payment successfully!</p>
+        </div>
+    </div>
+</body>
+</html>
