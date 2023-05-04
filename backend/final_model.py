@@ -8,7 +8,7 @@ def predict_func(user_destination, walking_distance):
     import numpy as np
     from operator import itemgetter
     import googlemaps
-    gmaps = googlemaps.Client(key='AIzaSyCKEZZOJty8nj7r_9KaDDEHfeU9qOtIH7s')
+    gmaps = googlemaps.Client(key='YOUR GOOGLE DISTANCE MATRIX API KEY')
     feature_list = ['Encoded_BlockFace', 'Day_type_Weekday', 'Day_type_Weekend', 'Hour_0',
                     'Hour_1', 'Hour_2', 'Hour_3', 'Hour_4', 'Hour_5', 'Hour_6', 'Hour_7',
                     'Hour_8', 'Hour_9', 'Hour_10', 'Hour_11', 'Hour_12', 'Hour_13',
