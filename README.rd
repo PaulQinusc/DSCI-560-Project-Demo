@@ -4,6 +4,5 @@ Steps to correctly use the demo:
   2.1 Open the DatabaseCreation.sql file and run it to create needed database and tables
 3.Change the Google map distance maxtrix API key in final_model.py file at line 11 so that you can call the API correctly; 
 Also, in the ir.py file, at line 33 you need to get a api token from platerecognizer.com to successfully call the api.
-4.install the HTTP-server on command line(MacOS)
-5.Run the http-server 3000 and node server.js to connect to the local host at port 3000
-6.go the localhost:3000 to see the main pages and demostration.
+4.Run node server.js in command line to connect to the local host at port 3000.
+5.go the localhost:3000 to see the main pages and demostration.
