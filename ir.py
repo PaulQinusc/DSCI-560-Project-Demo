@@ -30,7 +30,7 @@ def post_request(image):
             'https://api.platerecognizer.com/v1/plate-reader/',
             data=dict(regions=regions),
             files=dict(upload=fb),
-            headers={'Authorization': 'Token 6c50740f62b6d601cc4b6a0a737df4746d369edb'})
+            headers={'Authorization': 'YOUR API TOKEN FROM platerecognizer.com'})
     return response.json()
 
 def parse_json(response_json):
